@@ -1,16 +1,11 @@
-
 import './App.css';
-
- import GetData from './components/GetData';
+import GetData from './components/GetData';
 function App() {
 
   return (
     <div className="App">
       <header className="App-header">
- 
-  <GetData/>
- 
-    
+        <GetData />
       </header>
     </div>
   );
