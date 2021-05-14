@@ -22,7 +22,7 @@ const GetData = () => {
             });
         }
         navigator.geolocation.getCurrentPosition((location) => {
-            fetch(`http://api.weatherapi.com/v1/current.json?key=${apiUrl}&q=${location.coords.latitude},${location.coords.longitude}`)
+            fetch(`https://api.weatherapi.com/v1/current.json?key=${apiUrl}&q=${location.coords.latitude},${location.coords.longitude}`)
                 .then((res) => res.json())
                 .then((data) => {
                     setGetData(data);
